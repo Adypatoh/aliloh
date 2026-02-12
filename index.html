@@ -9,7 +9,7 @@
 
 <style>
     .audio-control{
-    position:top
+    position:absolute
     ;
     bottom:60px;
     right:20px;
@@ -157,11 +157,7 @@ p{
 </head>
 
 <body>
-<audio controls autoplay>
-audio id="loveSong" loop>
-    <source src="MR SEED ft MASAUTI (DAWA YA BARIDI-ONLY ONE )official music video [OkiXgJsu2ns].mp3" type="audio/mp3">
-    <!-- Replace above link with AUDIO_LINK_HERE.mp3 -->
-</audio>
+
 <div class="card">
     <h1>Will You Be My Valentine? 💘
         💖Alma💖💖
@@ -172,7 +168,11 @@ audio id="loveSong" loop>
     <button id="no" class="btn">No 😢</button>
     <div class="message" id="msg">You just made me the happiest man in the world🥰</div>
 </div>
-
+<audio controls autoplay>
+audio id="loveSong" loop>
+    <source src="MR SEED ft MASAUTI (DAWA YA BARIDI-ONLY ONE )official music video [OkiXgJsu2ns].mp3" type="audio/mp3">
+    <!-- Replace above link with AUDIO_LINK_HERE.mp3 -->
+</audio>
 <script>
     / ===== Attempt autoplay on load (may be blocked) =====
 window.addEventListener('load', ()=>{
