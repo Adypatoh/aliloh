@@ -116,7 +116,10 @@ p{
 </head>
 
 <body>
-
+<audio id="loveSong" loop>
+    <source src="MR SEED ft MASAUTI (DAWA YA BARIDI-ONLY ONE )official music video [OkiXgJsu2ns].mp3" type="audio/mp3">
+    <!-- Replace above link with AUDIO_LINK_HERE.mp3 -->
+</audio>
 <div class="card">
     <h1>Will You Be My Valentine? 💘
         Alilo💖
@@ -129,6 +132,11 @@ p{
 </div>
 
 <script>
+    / ===== Attempt autoplay on load (may be blocked) =====
+window.addEventListener('load', ()=>{
+    const audio = document.getElementById('loveSong');
+    audio.volume = 0.8;
+    audio.play().catch(()=>{});
 // Heart cursor trail
 document.addEventListener('mousemove', e=>{
     const heart=document.createElement('div');
