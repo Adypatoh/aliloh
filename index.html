@@ -8,47 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-    .audio-control{
-    position:absolute
-    ;
-    bottom:60px;
-    right:20px;
-    background:rgba(255,255,255,0.9);
-    color:#ff4d6d;
-    border:none;
-    border-radius:30px;
-    padding:12px 20px;
-    font-size:14px;
-    font-weight:600;
-    cursor:pointer;
-    box-shadow:0 8px 25px rgba(0,0,0,0.2);
-    backdrop-filter: blur(10px);
-    transition:all 0.3s ease;
-    z-index:999;
-}
-
-.audio-control:hover{
-    transform:scale(1.1);
-    box-shadow:0 10px 35px rgba(0,0,0,0.3);
-}
-
-/* Small pulse animation to attract attention */
-@keyframes pulse{
-    0%{box-shadow:0 0 0 0 rgba(255,77,109,0.6);}
-    70%{box-shadow:0 0 0 15px rgba(255,77,109,0);}
-    100%{box-shadow:0 0 0 0 rgba(255,77,109,0);}
-}
-
-.audio-control{
-    animation:pulse 2s infinite;
-}
-
-
-
-
-
-
-
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins, sans-serif;}
 body{
     height:100vh;
@@ -160,25 +119,22 @@ p{
 
 <div class="card">
     <h1>Will You Be My Valentine? 💘
-        💖Alma💖💖
+        Lovie💖
     </h1>
-    <p>You've been such a darling… I LOVE YOU💖💖</p>
+    <p>You've been such a darling…  😌</p>
     <p>Somehow true love does exist💘</p>
     <button id="yes" class="btn">Yes 💖</button>
     <button id="no" class="btn">No 😢</button>
-    <div class="message" id="msg">You just made me the happiest man in the world🥰</div>
+    <div class="message" id="msg">You just made me the happiest man in the world🥰
+        <p>valentines is a day to recognise our loved ones,as for me. I  LOVE YOU EVERYDAY💘💘.You've been my favourite person</p>
+   <p>I bless the day we fell in love💖lovie💘💘
+    I will always love loving you💘💘💘
+   </p>
+   <h1>I love you so much💘💘💘</h1>
+    </div>
 </div>
-<audio controls autoplay>
-audio id="loveSong" loop>
-    <source src="MR SEED ft MASAUTI (DAWA YA BARIDI-ONLY ONE )official music video [OkiXgJsu2ns].mp3" type="audio/mp3">
-    <!-- Replace above link with AUDIO_LINK_HERE.mp3 -->
-</audio>
+
 <script>
-    / ===== Attempt autoplay on load (may be blocked) =====
-window.addEventListener('load', ()=>{
-    const audio = document.getElementById('loveSong');
-    audio.volume = 0.8;
-    audio.play().catch(()=>{});
 // Heart cursor trail
 document.addEventListener('mousemove', e=>{
     const heart=document.createElement('div');
